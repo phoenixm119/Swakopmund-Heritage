@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Swakopmund Heritage Sites</title>
+
+  <meta name="description" content="Swakopmund Heritage Sites - a simple static site demo">
+  <meta property="og:title" content="Swakopmund Heritage Sites">
+  <meta property="og:description" content="Swakopmund Heritage Sites - a simple static site demo">
+  <meta property="og:image" content="">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="stylesheet" href="style.css">
+  </head>
+<body>
+
+  <header class="sitebar">
+    <h1>Swakopmund Heritage Sites</h1>
+    <div class="controls">
+      <input id="searchInput" class="search" placeholder="Search title or content (use '/' for OR)"/>
+      <button id="homeBtn" title="Home">Home</button>
+    </div>
+  </header>
+
+  <main class="container" id="app">
+    <section id="listView" aria-live="polite"></section>
+
+    <section id="pageView" style="display:none"></section>
+  </main>
+
+  <div id="overlay" role="dialog" aria-hidden="true"><img id="overlayImg" alt=""></div>
+  <footer>@2025 World Skills Competition</footer>
+  <script src="script.js"></script>
+</body>
+</html>
